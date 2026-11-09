@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album Player</title>
+    <link rel="stylesheet" href="styleM5.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Album Section -->
+        <div class="album-section">
+
+            <h2 class="album-title">THIS SONG IS FOR YOU</h2>
+            <p class="subtitle">Happy 5th Monthsary To Us My Love</p>
+
+            <div class="album-player" id="albumPlayer">
+
+                <!-- Vinyl Disc -->
+                <div class="disc" id="disc">
+                    <div class="disc-center">
+                        <img src="images-8.jpeg" alt="Disc Label">
+                    </div>
+                </div>
+
+                <!-- Album Cover -->
+                <div class="album-cover" id="albumCover">
+                    <img src="images-8.jpeg" alt="Album Cover">
+                    <div class="cover-text">
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="instruction" id="instruction">
+                Click the album to play
+            </p>
+
+            <div class="controls">
+                <button id="playButton">▶ Play</button>
+                <button id="pauseButton">Ⅱ Pause</button>
+            </div>
+
+            <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="progress" value="0" min="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+
+        </div>
+
+        <!-- Lyrics Section -->
+        <div class="lyrics-section">
+
+            <h2>SONG LYRICS</h2>
+            <p class="lyrics-subtitle">Listen and feel every word.</p>
+
+            <div class="lyrics-container" id="lyricsContainer">
+
+                <div class="lyrics-placeholder" id="placeholder">
+                    Your lyrics will appear here...
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Audio -->
+    <audio id="audio" src="Green_Day_last_night_of_the_earth_21_century_breakdown_mp3_pm.mp3"></audio>
+
+    <script src="scriptM5.js"></script>
+
+</body>
+</html>
